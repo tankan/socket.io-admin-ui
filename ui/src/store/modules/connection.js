@@ -5,7 +5,7 @@ export default {
   state: {
     serverUrl: "",
     wsOnly: false,
-    path: "/socket.io",
+    path: "/like",
     namespace: "/admin",
     parser: "default",
     sessionId: "",
@@ -23,7 +23,7 @@ export default {
         }
         state.wsOnly = localStorage.getItem("ws_only") === "true";
         state.sessionId = localStorage.getItem("session_id");
-        state.path = localStorage.getItem("path") || "/socket.io";
+        state.path = localStorage.getItem("path") || "/like";
         state.parser = localStorage.getItem("parser") || "default";
       }
     },
